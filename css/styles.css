@@ -1,0 +1,158 @@
+body {
+    box-sizing: border-box;
+    background-color: #f8f8f0;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-dark {
+    color: rgb(29, 29, 29) !important;
+}
+
+.bg-dark {
+    background-color: #7D5C65 !important;
+    color: rgb(29, 29, 29) !important;
+}
+
+.page {
+    text-align: center;
+    background-color: #f8f8f0;
+}
+
+h1 {
+    margin: 2%;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 8em;
+}
+
+.dark {
+    background-color: #dfdfd7;
+    margin: 0 2%;
+    padding: 2%;
+}
+
+.side-by-side {
+    display: flex;
+    padding: 2% 0 2% 2%;
+}
+
+.reverse-side-by-side {
+    display: flex;
+    padding: 2% 2% 2% 0%;
+}
+
+#main-pic {
+    width: 35%;
+    object-fit: cover;
+}
+
+p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+p strong{
+    color:rgb(105, 105, 105)
+}
+
+footer {
+    position: absolute;
+    /* bottom: 0; */
+    margin-top: auto;
+    /* padding-left: 2%; */
+}
+
+footer a{
+    color: grey;
+}
+
+footer a:hover {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+.footer-right {
+    position: relative;
+    float: right;
+}
+
+.review-page {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-header {
+    text-align: center;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+}
+
+.review{
+    width: 46%;
+    margin: 2%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    background-color: #dfdfd7;
+    margin: 2%;
+    padding: 2%;
+    width: 29%;
+}
+
+.item img {
+    margin-bottom: 4%;
+    width: 98%;
+}
+
+@media (max-width: 48em){
+    .side-by-side {
+        display: flex;
+        padding: 0%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .reverse-side-by-side {
+        display: flex;
+        padding: 0%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-pic {
+        width: 96%;
+        object-fit: cover;
+        align-self: center;
+    }
+    
+    .dark {
+        background-color: #dfdfd7;
+        margin: 2%;
+        padding: 2%;
+    }
+
+    .reviews {
+        flex-direction: column;
+    }
+    
+    .review{
+        width: 96%;
+    }
+
+    .item{
+        width: 98%;
+    }
+}
